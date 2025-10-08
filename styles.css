@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --primary-color: #ffffff;
+    --secondary-color: #f8f9fa;
+    --text-color: #333333;
+    --accent-color: #007bff;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(120deg, #c3e7d9, #84a0c0 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Добавлено для горизонтального центрирования */
+    padding: 35px;
+}
+
+body.night-theme {
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --text-color: #ffffff;
+    --accent-color: #0d8bff;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(120deg, #515a56, #1e2630 100%);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.weather-card {
+    background: var(--primary-color);
+    border-radius: 35px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.weather-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 { /* Исправлено: было .h1, должно быть h1 */
+    color: var(--text-color);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.weather-content {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.weather-icon {
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+.weather-temp {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.weather-desc {
+    font-size: 20px;
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.weather-footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
